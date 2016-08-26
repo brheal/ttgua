@@ -7,7 +7,20 @@
 //
 
 import UIKit
-
-class Chat: NSObject {
-
+import ObjectMapper
+public class Chat: NSObject, Mappable {
+    public var clientSent:Bool?
+    public var loginId:Int?
+    public var message:String?
+    
+    public required init?(_ map: Map) {
+        super.init()
+        mapping(map)
+    }
+    
+    public func mapping(map: Map) {
+        clientSent <- map["ClientSent"]
+        loginId <- map["LoginId"]
+        message <- map["MessageText"]
+    }
 }

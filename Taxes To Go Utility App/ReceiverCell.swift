@@ -9,6 +9,8 @@
 import UIKit
 
 class ReceiverCell: UITableViewCell {
+    @IBOutlet weak var senderName: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
     static let reuseIdentifier: String = "ReceiverCell"
     override func awakeFromNib() {
         super.awakeFromNib()

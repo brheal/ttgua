@@ -17,7 +17,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var chatBar: UIVisualEffectView!
     @IBOutlet weak var sendProgress: UIProgressView!
     
-    private var chats:[String] = [String]()
+    private var chats:[Chat] = [Chat]()
     var detailItem: Client? {
         didSet {
             // Update the view.
@@ -40,7 +40,7 @@ class DetailViewController: UIViewController {
             self.chatBar.hidden = false
         }
         if let navItemView = self.navItem {
-            navItemView.title = "Conversation with \(client.lastName)"
+            navItemView.title = "Conversation with \(client.lastName!)"
         }
         
         
@@ -57,7 +57,17 @@ class DetailViewController: UIViewController {
     }
     
     private func refreshChats(forClient client:Client) {
-        
+        Interface.sharedInstance.getChats(forClient: String(client.clientId!)) { (chats, error) in
+            if chats != nil {
+                dispatch_async(dispatch_get_main_queue(), { 
+                    self.chats = chats!
+                    if let table = self.tableView {
+                        table.reloadData()
+                    }
+                    
+                })
+            }
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -72,6 +82,9 @@ class DetailViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.registerNib(UINib(nibName: ReceiverCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: ReceiverCell.reuseIdentifier)
         tableView.registerNib(UINib(nibName: SenderCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: SenderCell.reuseIdentifier)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100.0
+        tableView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 50.0, right: 0.0)
         self.configureView()
     }
 
@@ -94,7 +107,18 @@ extension DetailViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let chat = chats[indexPath.row]
+        if chat.clientSent == true {
+            let cell = tableView.dequeueReusableCellWithIdentifier(ReceiverCell.reuseIdentifier, forIndexPath: indexPath) as! ReceiverCell
+            cell.messageLabel.text = chat.message
+            cell.senderName.text = detailItem?.lastName
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier(SenderCell.reuseIdentifier, forIndexPath: indexPath) as! SenderCell
+            cell.messageLabel.text = chat.message
+            cell.senderLabel.text = "YOU"
+            return cell
+        }
     }
 }
 

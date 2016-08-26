@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417EBB4E246E68B97123C6C1 /* Pods_Taxes_To_Go_Utility_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5D22118C0F157AC8044D9F /* Pods_Taxes_To_Go_Utility_AppTests.framework */; };
+		9FBB93669285D8AFB4396273 /* Pods_Taxes_To_Go_Utility_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D7633CC2C2BF2E0F73E42 /* Pods_Taxes_To_Go_Utility_AppUITests.framework */; };
+		D17C8F15ADBD9AEED50373B3 /* Pods_Taxes_To_Go_Utility_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2982EF2C484E96734E9FC487 /* Pods_Taxes_To_Go_Utility_App.framework */; };
 		FE1991991D708E4000BE0AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1991981D708E4000BE0AC9 /* AppDelegate.swift */; };
 		FE19919B1D708E4000BE0AC9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19919A1D708E4000BE0AC9 /* MasterViewController.swift */; };
 		FE19919D1D708E4000BE0AC9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19919C1D708E4000BE0AC9 /* DetailViewController.swift */; };
@@ -43,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AAD3C570DA536F11CD762F1 /* Pods-Taxes To Go Utility AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxes To Go Utility AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taxes To Go Utility AppTests/Pods-Taxes To Go Utility AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		1613695BEBB868848C49B3A4 /* Pods-Taxes To Go Utility App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxes To Go Utility App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taxes To Go Utility App/Pods-Taxes To Go Utility App.release.xcconfig"; sourceTree = "<group>"; };
+		2982EF2C484E96734E9FC487 /* Pods_Taxes_To_Go_Utility_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taxes_To_Go_Utility_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3561636E74DAB9247C026B43 /* Pods-Taxes To Go Utility AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxes To Go Utility AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taxes To Go Utility AppUITests/Pods-Taxes To Go Utility AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		472D7633CC2C2BF2E0F73E42 /* Pods_Taxes_To_Go_Utility_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taxes_To_Go_Utility_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C336C83BAE763B813B714CF /* Pods-Taxes To Go Utility AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxes To Go Utility AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Taxes To Go Utility AppUITests/Pods-Taxes To Go Utility AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD63D5846FD36D64C9B7BD88 /* Pods-Taxes To Go Utility AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxes To Go Utility AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Taxes To Go Utility AppTests/Pods-Taxes To Go Utility AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD669307718CB0ACB2FA4150 /* Pods-Taxes To Go Utility App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxes To Go Utility App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Taxes To Go Utility App/Pods-Taxes To Go Utility App.debug.xcconfig"; sourceTree = "<group>"; };
+		FC5D22118C0F157AC8044D9F /* Pods_Taxes_To_Go_Utility_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taxes_To_Go_Utility_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1991951D708E4000BE0AC9 /* Taxes To Go Utility App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taxes To Go Utility App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1991981D708E4000BE0AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE19919A1D708E4000BE0AC9 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17C8F15ADBD9AEED50373B3 /* Pods_Taxes_To_Go_Utility_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417EBB4E246E68B97123C6C1 /* Pods_Taxes_To_Go_Utility_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +100,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBB93669285D8AFB4396273 /* Pods_Taxes_To_Go_Utility_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5882A00F01675B82C16FC1E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2982EF2C484E96734E9FC487 /* Pods_Taxes_To_Go_Utility_App.framework */,
+				FC5D22118C0F157AC8044D9F /* Pods_Taxes_To_Go_Utility_AppTests.framework */,
+				472D7633CC2C2BF2E0F73E42 /* Pods_Taxes_To_Go_Utility_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB3E9F6E95CC3D70F7B33048 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD669307718CB0ACB2FA4150 /* Pods-Taxes To Go Utility App.debug.xcconfig */,
+				1613695BEBB868848C49B3A4 /* Pods-Taxes To Go Utility App.release.xcconfig */,
+				AD63D5846FD36D64C9B7BD88 /* Pods-Taxes To Go Utility AppTests.debug.xcconfig */,
+				0AAD3C570DA536F11CD762F1 /* Pods-Taxes To Go Utility AppTests.release.xcconfig */,
+				8C336C83BAE763B813B714CF /* Pods-Taxes To Go Utility AppUITests.debug.xcconfig */,
+				3561636E74DAB9247C026B43 /* Pods-Taxes To Go Utility AppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FE19918C1D708E4000BE0AC9 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +137,8 @@
 				FE1991AE1D708E4100BE0AC9 /* Taxes To Go Utility AppTests */,
 				FE1991B91D708E4100BE0AC9 /* Taxes To Go Utility AppUITests */,
 				FE1991961D708E4000BE0AC9 /* Products */,
+				BB3E9F6E95CC3D70F7B33048 /* Pods */,
+				5882A00F01675B82C16FC1E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,12 +156,12 @@
 			isa = PBXGroup;
 			children = (
 				FE1991981D708E4000BE0AC9 /* AppDelegate.swift */,
-				FE1991CA1D7090E700BE0AC9 /* Views */,
-				FE19919E1D708E4000BE0AC9 /* Main.storyboard */,
 				FE1991A11D708E4100BE0AC9 /* Assets.xcassets */,
-				FE1991A31D708E4100BE0AC9 /* LaunchScreen.storyboard */,
 				FE1991A61D708E4100BE0AC9 /* Info.plist */,
+				FE1991A31D708E4100BE0AC9 /* LaunchScreen.storyboard */,
+				FE19919E1D708E4000BE0AC9 /* Main.storyboard */,
 				FE1991CD1D70AF8E00BE0AC9 /* Models */,
+				FE1991CA1D7090E700BE0AC9 /* Views */,
 			);
 			path = "Taxes To Go Utility App";
 			sourceTree = "<group>";
@@ -191,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE1991BF1D708E4100BE0AC9 /* Build configuration list for PBXNativeTarget "Taxes To Go Utility App" */;
 			buildPhases = (
+				D9FAC45868F845A5BE79C107 /* [CP] Check Pods Manifest.lock */,
 				FE1991911D708E4000BE0AC9 /* Sources */,
 				FE1991921D708E4000BE0AC9 /* Frameworks */,
 				FE1991931D708E4000BE0AC9 /* Resources */,
+				22CDB7C9272CD9A5907B07AF /* [CP] Embed Pods Frameworks */,
+				5BB8AC81C14F9F8AFB1CFBE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE1991C21D708E4100BE0AC9 /* Build configuration list for PBXNativeTarget "Taxes To Go Utility AppTests" */;
 			buildPhases = (
+				21A3D18D5420FD519F6C9C4A /* [CP] Check Pods Manifest.lock */,
 				FE1991A71D708E4100BE0AC9 /* Sources */,
 				FE1991A81D708E4100BE0AC9 /* Frameworks */,
 				FE1991A91D708E4100BE0AC9 /* Resources */,
+				7EC43444932AFE815862CB08 /* [CP] Embed Pods Frameworks */,
+				021F3E41653F87DCC05D064B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE1991C51D708E4100BE0AC9 /* Build configuration list for PBXNativeTarget "Taxes To Go Utility AppUITests" */;
 			buildPhases = (
+				50254D7E26F45F1C4183EFBF /* [CP] Check Pods Manifest.lock */,
 				FE1991B21D708E4100BE0AC9 /* Sources */,
 				FE1991B31D708E4100BE0AC9 /* Frameworks */,
 				FE1991B41D708E4100BE0AC9 /* Resources */,
+				C9316E3F2C9FD3801C3FAED3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,6 +359,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		021F3E41653F87DCC05D064B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taxes To Go Utility AppTests/Pods-Taxes To Go Utility AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21A3D18D5420FD519F6C9C4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		22CDB7C9272CD9A5907B07AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taxes To Go Utility App/Pods-Taxes To Go Utility App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50254D7E26F45F1C4183EFBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB8AC81C14F9F8AFB1CFBE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taxes To Go Utility App/Pods-Taxes To Go Utility App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EC43444932AFE815862CB08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taxes To Go Utility AppTests/Pods-Taxes To Go Utility AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9316E3F2C9FD3801C3FAED3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taxes To Go Utility AppUITests/Pods-Taxes To Go Utility AppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FAC45868F845A5BE79C107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE1991911D708E4000BE0AC9 /* Sources */ = {
@@ -467,6 +638,7 @@
 		};
 		FE1991C01D708E4100BE0AC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD669307718CB0ACB2FA4150 /* Pods-Taxes To Go Utility App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Taxes To Go Utility App/Info.plist";
@@ -478,6 +650,7 @@
 		};
 		FE1991C11D708E4100BE0AC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1613695BEBB868848C49B3A4 /* Pods-Taxes To Go Utility App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Taxes To Go Utility App/Info.plist";
@@ -489,6 +662,7 @@
 		};
 		FE1991C31D708E4100BE0AC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD63D5846FD36D64C9B7BD88 /* Pods-Taxes To Go Utility AppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Taxes To Go Utility AppTests/Info.plist";
@@ -501,6 +675,7 @@
 		};
 		FE1991C41D708E4100BE0AC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAD3C570DA536F11CD762F1 /* Pods-Taxes To Go Utility AppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Taxes To Go Utility AppTests/Info.plist";
@@ -513,6 +688,7 @@
 		};
 		FE1991C61D708E4100BE0AC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C336C83BAE763B813B714CF /* Pods-Taxes To Go Utility AppUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Taxes To Go Utility AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -524,6 +700,7 @@
 		};
 		FE1991C71D708E4100BE0AC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3561636E74DAB9247C026B43 /* Pods-Taxes To Go Utility AppUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Taxes To Go Utility AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -552,6 +729,7 @@
 				FE1991C11D708E4100BE0AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE1991C21D708E4100BE0AC9 /* Build configuration list for PBXNativeTarget "Taxes To Go Utility AppTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +738,7 @@
 				FE1991C41D708E4100BE0AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE1991C51D708E4100BE0AC9 /* Build configuration list for PBXNativeTarget "Taxes To Go Utility AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +747,7 @@
 				FE1991C71D708E4100BE0AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

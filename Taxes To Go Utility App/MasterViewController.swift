@@ -82,7 +82,7 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         let object = objects[indexPath.row]
-        cell.textLabel?.text = "\(object.lastName) : \(object.taxCode)"
+        cell.textLabel?.text = "\(object.lastName!) : \(object.taxCode!)"
         
         return cell
     }

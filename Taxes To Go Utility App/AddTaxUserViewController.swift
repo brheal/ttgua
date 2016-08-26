@@ -23,7 +23,7 @@ class AddTaxUserViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         lastNameField.text = "Barrett"
-        taxCodeField.text = "1235"
+        taxCodeField.text = "19339"
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,8 +33,14 @@ class AddTaxUserViewController: UIViewController {
     
     @IBAction func addUserPressed(sender : AnyObject) {
         if lastNameField.text?.characters.count != 0 && taxCodeField.text?.characters.count != 0 {
-            let user = Client(lastName: lastNameField.text!, taxCode: taxCodeField.text!)
-            delegate?.didAddUser(self, user: user)
+            Interface.sharedInstance.getClient(withTaxCode: Int(taxCodeField.text!)!, withLastName: lastNameField.text!, completion: { (client, error) in
+                if error == nil {
+                    self.delegate?.didAddUser(self, user: client!)
+                }
+                
+            })
+//            let user = Client(lastName: lastNameField.text!, taxCode: taxCodeField.text!)
+//            delegate?.didAddUser(self, user: user)
         }
     }
 

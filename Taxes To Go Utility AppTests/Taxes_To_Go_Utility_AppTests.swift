@@ -7,30 +7,47 @@
 //
 
 import XCTest
+
 @testable import Taxes_To_Go_Utility_App
 
-class Taxes_To_Go_Utility_AppTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+
+class InterfaceTests: XCTestCase {
+    func testGetClientByLastnameAndTaxCode() {
+        let exp = expectationWithDescription("Get client by last and tax code")
+        
+        Interface.sharedInstance.getClient(withTaxCode: 19339, withLastName: "barrett") { (client, error) in
+            XCTAssertNil(error)
+            XCTAssertNotNil(client?.clientId)
+            XCTAssertNotNil(client?.lastName)
+            XCTAssertNotNil(client?.taxCode)
+            exp.fulfill()
         }
+        waitForExpectationsWithTimeout(10, handler: nil)
     }
     
+    func testGetChats() {
+        let exp = expectationWithDescription("Get chats")
+        Interface.sharedInstance.getClient(withTaxCode: 19339, withLastName: "barrett") { (client, error) in
+            guard let curClient = client else {
+                XCTFail()
+                exp.fulfill()
+                return
+            }
+            guard let clientID = curClient.clientId else {
+                XCTFail()
+                exp.fulfill()
+                return
+            }
+            Interface.sharedInstance.getChats(forClient: String(clientID), completion: { (chats, error) in
+                XCTAssertNil(error)
+                XCTAssertNotNil(chats)
+                XCTAssertGreaterThan(chats!.count, 0)
+                let chat = chats?.first!
+                XCTAssertNotNil(chat?.message)
+                exp.fulfill()
+            })
+        }
+        waitForExpectationsWithTimeout(10, handler: nil)
+        
+    }
 }
