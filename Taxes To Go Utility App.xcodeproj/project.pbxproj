@@ -15,6 +15,14 @@
 		FE1991A51D708E4100BE0AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1991A31D708E4100BE0AC9 /* LaunchScreen.storyboard */; };
 		FE1991B01D708E4100BE0AC9 /* Taxes_To_Go_Utility_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1991AF1D708E4100BE0AC9 /* Taxes_To_Go_Utility_AppTests.swift */; };
 		FE1991BB1D708E4100BE0AC9 /* Taxes_To_Go_Utility_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1991BA1D708E4100BE0AC9 /* Taxes_To_Go_Utility_AppUITests.swift */; };
+		FE1991C91D7090D900BE0AC9 /* AddTaxUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1991C81D7090D900BE0AC9 /* AddTaxUserViewController.swift */; };
+		FE1991CC1D70AF4200BE0AC9 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1991CB1D70AF4200BE0AC9 /* Client.swift */; };
+		FE1991D31D70B49F00BE0AC9 /* SenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1991D11D70B49F00BE0AC9 /* SenderCell.swift */; };
+		FE1991D41D70B49F00BE0AC9 /* SenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1991D21D70B49F00BE0AC9 /* SenderCell.xib */; };
+		FE1991D71D70B4AC00BE0AC9 /* ReceiverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1991D51D70B4AC00BE0AC9 /* ReceiverCell.swift */; };
+		FE1991D81D70B4AC00BE0AC9 /* ReceiverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1991D61D70B4AC00BE0AC9 /* ReceiverCell.xib */; };
+		FE1991DB1D70B4EB00BE0AC9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1991DA1D70B4EB00BE0AC9 /* Chat.swift */; };
+		FE1991DD1D70B85700BE0AC9 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1991DC1D70B85700BE0AC9 /* Interface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		FE1991B61D708E4100BE0AC9 /* Taxes To Go Utility AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Taxes To Go Utility AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1991BA1D708E4100BE0AC9 /* Taxes_To_Go_Utility_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxes_To_Go_Utility_AppUITests.swift; sourceTree = "<group>"; };
 		FE1991BC1D708E4100BE0AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE1991C81D7090D900BE0AC9 /* AddTaxUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaxUserViewController.swift; sourceTree = "<group>"; };
+		FE1991CB1D70AF4200BE0AC9 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		FE1991D11D70B49F00BE0AC9 /* SenderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderCell.swift; sourceTree = "<group>"; };
+		FE1991D21D70B49F00BE0AC9 /* SenderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SenderCell.xib; sourceTree = "<group>"; };
+		FE1991D51D70B4AC00BE0AC9 /* ReceiverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverCell.swift; sourceTree = "<group>"; };
+		FE1991D61D70B4AC00BE0AC9 /* ReceiverCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiverCell.xib; sourceTree = "<group>"; };
+		FE1991DA1D70B4EB00BE0AC9 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		FE1991DC1D70B85700BE0AC9 /* Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				FE1991981D708E4000BE0AC9 /* AppDelegate.swift */,
-				FE19919A1D708E4000BE0AC9 /* MasterViewController.swift */,
-				FE19919C1D708E4000BE0AC9 /* DetailViewController.swift */,
+				FE1991CA1D7090E700BE0AC9 /* Views */,
 				FE19919E1D708E4000BE0AC9 /* Main.storyboard */,
 				FE1991A11D708E4100BE0AC9 /* Assets.xcassets */,
 				FE1991A31D708E4100BE0AC9 /* LaunchScreen.storyboard */,
 				FE1991A61D708E4100BE0AC9 /* Info.plist */,
+				FE1991CD1D70AF8E00BE0AC9 /* Models */,
 			);
 			path = "Taxes To Go Utility App";
 			sourceTree = "<group>";
@@ -126,6 +142,46 @@
 				FE1991BC1D708E4100BE0AC9 /* Info.plist */,
 			);
 			path = "Taxes To Go Utility AppUITests";
+			sourceTree = "<group>";
+		};
+		FE1991CA1D7090E700BE0AC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE19919A1D708E4000BE0AC9 /* MasterViewController.swift */,
+				FE1991D01D70B48600BE0AC9 /* Chat Table */,
+				FE1991C81D7090D900BE0AC9 /* AddTaxUserViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FE1991CD1D70AF8E00BE0AC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE1991CB1D70AF4200BE0AC9 /* Client.swift */,
+				FE1991DA1D70B4EB00BE0AC9 /* Chat.swift */,
+				FE1991DC1D70B85700BE0AC9 /* Interface.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FE1991D01D70B48600BE0AC9 /* Chat Table */ = {
+			isa = PBXGroup;
+			children = (
+				FE19919C1D708E4000BE0AC9 /* DetailViewController.swift */,
+				FE1991D91D70B4B000BE0AC9 /* Cells */,
+			);
+			name = "Chat Table";
+			sourceTree = "<group>";
+		};
+		FE1991D91D70B4B000BE0AC9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FE1991D11D70B49F00BE0AC9 /* SenderCell.swift */,
+				FE1991D21D70B49F00BE0AC9 /* SenderCell.xib */,
+				FE1991D51D70B4AC00BE0AC9 /* ReceiverCell.swift */,
+				FE1991D61D70B4AC00BE0AC9 /* ReceiverCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +288,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1991D41D70B49F00BE0AC9 /* SenderCell.xib in Resources */,
 				FE1991A51D708E4100BE0AC9 /* LaunchScreen.storyboard in Resources */,
 				FE1991A21D708E4100BE0AC9 /* Assets.xcassets in Resources */,
+				FE1991D81D70B4AC00BE0AC9 /* ReceiverCell.xib in Resources */,
 				FE1991A01D708E4000BE0AC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +318,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE19919D1D708E4000BE0AC9 /* DetailViewController.swift in Sources */,
+				FE1991C91D7090D900BE0AC9 /* AddTaxUserViewController.swift in Sources */,
+				FE1991D31D70B49F00BE0AC9 /* SenderCell.swift in Sources */,
 				FE19919B1D708E4000BE0AC9 /* MasterViewController.swift in Sources */,
+				FE1991D71D70B4AC00BE0AC9 /* ReceiverCell.swift in Sources */,
+				FE1991DB1D70B4EB00BE0AC9 /* Chat.swift in Sources */,
+				FE1991CC1D70AF4200BE0AC9 /* Client.swift in Sources */,
 				FE1991991D708E4000BE0AC9 /* AppDelegate.swift in Sources */,
+				FE1991DD1D70B85700BE0AC9 /* Interface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
