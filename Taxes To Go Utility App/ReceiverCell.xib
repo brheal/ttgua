@@ -23,10 +23,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8LN-XP-pb0">
-                        <rect key="frame" x="46" y="8" width="160" height="58"/>
+                        <rect key="frame" x="46" y="8" width="58" height="58"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sta-Np-os1">
-                                <rect key="frame" x="8" y="8" width="144" height="42"/>
+                                <rect key="frame" x="8" y="8" width="42" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -48,7 +48,7 @@
                     <constraint firstItem="ckw-89-8T6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ZNc-FI-VGS"/>
                     <constraint firstItem="ckw-89-8T6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dow-2O-mxz"/>
                     <constraint firstItem="8LN-XP-pb0" firstAttribute="leading" secondItem="ckw-89-8T6" secondAttribute="trailing" constant="7.5" id="gRS-6b-ZZk"/>
-                    <constraint firstItem="8LN-XP-pb0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1/2" id="nNm-Fd-SaO"/>
+                    <constraint firstItem="8LN-XP-pb0" firstAttribute="width" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1/2" id="nNm-Fd-SaO"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

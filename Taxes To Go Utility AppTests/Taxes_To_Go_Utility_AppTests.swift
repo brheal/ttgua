@@ -25,6 +25,19 @@ class InterfaceTests: XCTestCase {
         waitForExpectationsWithTimeout(10, handler: nil)
     }
     
+    func testSendChat() {
+        let exp = expectationWithDescription("send chat")
+        Interface.sharedInstance.getClient(withTaxCode: 19339, withLastName: "barrett") { (client, error) in
+            XCTAssertNotNil(client)
+            XCTAssertNil(error)
+            Interface.sharedInstance.sendChat(String(client!.clientId!), message: "This is a test message from unit testing", completion: { (error) in
+                XCTAssertNil(error)
+                exp.fulfill()
+            })
+        }
+        waitForExpectationsWithTimeout(10, handler: nil)
+    }
+    
     func testGetChats() {
         let exp = expectationWithDescription("Get chats")
         Interface.sharedInstance.getClient(withTaxCode: 19339, withLastName: "barrett") { (client, error) in

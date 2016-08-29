@@ -40,8 +40,18 @@ public class Interface: NSObject {
         }
     }
     
-    public func sendChat() {
-        
+    public func sendChat(userId:String, message:String, completion:(error:NSError?)->Void) {
+        Alamofire.request(.POST, "\(baseURL)/PrefillDocument/SendTextMessage", parameters: ["userId":userId, "taxyear":2015, "message":message], encoding: .URLEncodedInURL, headers: defaultHeaders).responseData { (response) in
+            switch(response.result) {
+            case .Success(let data):
+                print(data)
+                completion(error: nil)
+                
+            case .Failure(let error):
+                print(error)
+                completion(error: error)
+            }
+        }
     }
     
     public func getClient(withTaxCode code:Int, withLastName name:String, completion:(client:Client?, error:NSError?)->Void) {

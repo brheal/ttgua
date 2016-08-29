@@ -93,7 +93,16 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func sendPressed(sender: AnyObject) {
-        
+        if chatField.text?.characters.count != 0 {
+            Interface.sharedInstance.sendChat(String(detailItem!.clientId!), message: chatField.text!, completion: { (error) in
+                if error == nil {
+                    self.refreshChats(forClient: self.detailItem!)
+                    dispatch_async(dispatch_get_main_queue(), { 
+                        self.chatField.text = nil
+                    })
+                }
+            })
+        }
     }
 }
 

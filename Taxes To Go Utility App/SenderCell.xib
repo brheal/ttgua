@@ -23,10 +23,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w88-oa-PVj">
-                        <rect key="frame" x="113" y="8" width="160" height="47.5"/>
+                        <rect key="frame" x="215" y="8" width="58" height="47.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v3-qC-HaH">
-                                <rect key="frame" x="8" y="8" width="144" height="31.5"/>
+                                <rect key="frame" x="8" y="8" width="42" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -47,7 +47,7 @@
                     <constraint firstItem="w88-oa-PVj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="QHy-au-CR8"/>
                     <constraint firstItem="LyG-lE-7JB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="T3T-LI-tYu"/>
                     <constraint firstItem="LyG-lE-7JB" firstAttribute="leading" secondItem="w88-oa-PVj" secondAttribute="trailing" constant="8" id="TCI-Vr-AFW"/>
-                    <constraint firstItem="w88-oa-PVj" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1/2" id="e0O-il-ZXZ"/>
+                    <constraint firstItem="w88-oa-PVj" firstAttribute="width" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1/2" id="e0O-il-ZXZ"/>
                     <constraint firstItem="LyG-lE-7JB" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gYw-Tb-cWP"/>
                 </constraints>
             </tableViewCellContentView>
